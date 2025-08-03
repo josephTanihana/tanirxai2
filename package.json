@@ -1,0 +1,76 @@
+{
+  "name": "ai-tani-complete",
+  "version": "2.0.0",
+  "description": "AI Tani Complete - Universal Code Assistant with 100,000+ Languages Support and Build Tools for .exe and .ipa",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "npm install && npm run build:client",
+    "build:client": "cd public && npm run build",
+    "build:exe": "node tools/build-tools.js --type=exe",
+    "build:ipa": "node tools/build-tools.js --type=ipa",
+    "build:apk": "node tools/build-tools.js --type=apk",
+    "test": "jest",
+    "lint": "eslint src/",
+    "deploy": "npm run build && npm start"
+  },
+  "keywords": [
+    "ai",
+    "code-assistant",
+    "programming",
+    "100000-languages",
+    "build-tools",
+    "exe",
+    "ipa",
+    "mobile-apps",
+    "desktop-apps",
+    "web-development"
+  ],
+  "author": "AI Tani Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.6",
+    "axios": "^1.5.0",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.0",
+    "fs-extra": "^11.1.1",
+    "archiver": "^6.0.1",
+    "unzipper": "^0.10.14",
+    "ws": "^8.14.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.5",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.4",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ai-tani/ai-tani-complete.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ai-tani/ai-tani-complete/issues"
+  },
+  "homepage": "https://ai-tani.com"
+} 
